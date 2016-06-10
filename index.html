@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Module Loader</title>
+</head>
+<body>
+
+  <div ng-controller="ProductController as _product">
+    <ul>
+      <li ng-repeat="product in _product.products">{{product.name}}</li>
+    </ul>
+  </div>
+
+  <div ng-controller="UserController as _user">
+    {{_user.name}}
+  </div>
+
+  <script src="bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "angular_module_loader",
+  "version": "1.0.0",
+  "description": "Using a module loader",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "browserify app.module.js components/*/*.js -o bundle.js",
+    "start": "npm run build-js && opener index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmutduva/angular_module_loader.git"
+  },
+  "author": "Mahmut Duva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahmutduva/angular_module_loader/issues"
+  },
+  "homepage": "https://github.com/mahmutduva/angular_module_loader#readme",
+  "dependencies": {
+    "angular": "~1.5.6",
+    "angular-material": "linclark/bower-material"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "opener": "^1.4.0"
+  }
+}
